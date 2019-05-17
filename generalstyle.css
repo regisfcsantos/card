@@ -1,0 +1,147 @@
+/* Add a black background color to the top navigation */
+body {
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1.2px;
+  color: #777;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-weight: normal;
+  color: #888 !important;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
+.barra-header {
+  background-color: #fff;
+  display: block;
+}
+
+.header {
+  z-index: 1000;
+  display: block;
+  position: fixed;
+  width: 100%;
+  color: #038ff9;
+  padding: 0 0 0 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 15px #ddd;
+}
+
+.caixa {
+  border-radius:5px;
+  border: 1.5px solid #038ff9;
+  padding: 5px 20px;
+}
+
+.header h2 {
+  color: #038ff9;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+main.main{
+  margin: 0;
+  padding: 0;
+}
+
+.card .square, .card .main-square{
+
+}
+
+.profile-image {
+    height: 70vw !important;
+}
+
+}
+
+.main {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  text-align: left;
+}
+
+.card {
+  margin: 90px auto 30px;
+  padding: 0px;
+  max-width: 450px;
+  border-radius: 3px;
+}
+
+.card h2, .card h3, .card h4, .card h5, .card p {
+  margin: 7px;
+}
+
+.card h5 {
+  color: #9a9a9a;
+}
+
+.box p.rodape {
+  text-align: center;
+}
+
+.main-square {
+  margin: 20px;
+  padding: 0;  
+  background-color:#fff;
+  color:#444;
+  border-radius: 3px;
+  box-shadow: 0px 3px 15px #ccc;  
+}
+
+.box {
+  margin: 15px 0;
+  padding: 5px 20px 20px;  
+}
+
+.square {
+  margin: 20px;
+  padding: 5px 20px;
+  background-color:#fff;
+  color:#444;
+  border-radius: 3px;
+  box-shadow: 0px 3px 15px #ccc;
+}
+
+
+/*botao do perfil*/
+.area-botao-contato {
+  margin: 0;
+  background-color:#fff;
+}
+
+.quadro-botao {
+  margin: 20px auto 0;
+  padding: 0px 0;
+  text-align: center;
+}
+
+.botao-contato {
+  margin: 0px 0;
+  background-color: #038FF9;
+  border-radius: 3px;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 1.7px;
+}
+
+/*imagem do perfil*/
+.profile-image {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.profile-image img {
+  position: absolute;
+  clip: rect(0, 100%, 40px, 0px);
+  width: 100% ;
+}
