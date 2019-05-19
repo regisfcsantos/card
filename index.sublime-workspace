@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"mensagem",
+				"mensagem"
+			],
+			[
+				"font-",
+				"font-weight\tproperty"
+			],
+			[
+				"margin-",
+				"margin-left\tproperty"
+			],
+			[
 				"border",
 				"border-color\tproperty"
 			],
@@ -32,10 +44,6 @@
 				"sans-serif\tfont-family"
 			],
 			[
-				"font-",
-				"font-style\tproperty"
-			],
-			[
 				"font",
 				"font-weight\tproperty"
 			],
@@ -51,7 +59,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4048,
+				"buffer_size": 4036,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -60,10 +68,41 @@
 			"file": "styles/generalstyle.css",
 			"settings":
 			{
-				"buffer_size": 2060,
+				"buffer_size": 2266,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
 				"name": "/* Add a black background color to the top navigat"
+			}
+		},
+		{
+			"file": "escrever-para-regisfcsantos.html",
+			"settings":
+			{
+				"buffer_size": 3231,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n  // The global $_POST variable allows you to access the data sent with the POST method by name\n  // To access the data sent with the GET method, you can use $_GET\n  $assunto = htmlspecialchars($_POST['assunto']);\n  $mensagem  = htmlspecialchars($_POST['mensagem']);\n\n  echo  $say, ' ', $to;\n?>\n\n<?php\nif(isset($_POST['email'])) {\n \n    // EDIT THE 2 LINES BELOW AS REQUIRED\n    $email_to = \"regisfcsantos@gmail.com\";\n    $email_subject = \"Mensagem via Saga\";\n \n    function died($error) {\n        // your error code can go here\n        echo \"We are very sorry, but there were error(s) found with the form you submitted. \";\n        echo \"These errors appear below.<br /><br />\";\n        echo $error.\"<br /><br />\";\n        echo \"Please go back and fix these errors.<br /><br />\";\n        die();\n    }\n \n \n    // validation expected data exists\n    if(!isset($_POST['assunto']) ||\n        !isset($_POST['mensagem'])) {\n        died('We are sorry, but there appears to be a problem with the form you submitted.');       \n    }\n \n    $assunto = $_POST['assunto']; // required\n    $mensagem = $_POST['mensagem']; // required\n\n    $error_message = \"\";\n    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$/';\n \n  if(!preg_match($string_exp,$assunto)) {\n    $error_message .= 'The First Name you entered does not appear to be valid.<br />';\n  }\n \n  if(!preg_match($string_exp,$assunto)) {\n    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';\n  }\n \n  if(strlen($error_message) > 0) {\n    died($error_message);\n  }\n \n    $email_message = \"Form details below.\\n\\n\";\n \n     \n    function clean_string($string) {\n      $bad = array(\"content-type\",\"bcc:\",\"to:\",\"cc:\",\"href\");\n      return str_replace($bad,\"\",$string);\n    }\n     \n \n    $email_message .= \"Assunto: \".clean_string($assunto).\"\\n\";\n    $email_message .= \"Mensagem: \".clean_string($mensagem).\"\\n\";\n \n// create email headers\n$headers = 'From: '.$email_from.\"\\r\\n\".\n'Reply-To: '.$email_from.\"\\r\\n\" .\n'X-Mailer: PHP/' . phpversion();\n@mail($email_to, $email_subject, $email_message, $headers);  \n?>\n \n<!-- include your own success html here -->\n \nThank you for contacting us. We will be in touch with you very soon.\n \n<?php\n \n}\n?>",
+			"file": "contact.php",
+			"file_size": 307,
+			"file_write_time": 132025911285236839,
+			"settings":
+			{
+				"buffer_size": 2231,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/estilos-escrever.css",
+			"settings":
+			{
+				"buffer_size": 79,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "/* arquivo de css - escrever */"
 			}
 		},
 		{
@@ -144,7 +183,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -153,15 +192,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4048,
+						"buffer_size": 4036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1762,
-								1762
+								1668,
+								1668
 							]
 						],
 						"settings":
@@ -171,10 +210,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 882.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -183,15 +222,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2060,
+						"buffer_size": 2266,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								697,
-								697
+								1306,
+								1306
 							]
 						],
 						"settings":
@@ -202,14 +241,101 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 499.0,
+						"translation.y": 1093.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "escrever-para-regisfcsantos.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1164,
+								1164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 610.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2228,
+								2228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1150.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
+					"file": "styles/estilos-escrever.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/* arquivo de css - escrever */",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "scripts/app.js",
 					"semi_transient": false,
 					"settings":
@@ -235,7 +361,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
