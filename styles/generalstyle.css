@@ -134,11 +134,11 @@ main.main{
 
 .botao-contato a, .botao-contato a:visited, .botao-contato a:hover, .botao-contato a:active {
   text-decoration: none !important;
-  color: #fff;
+  color: #fff !important;
 }
 
-.bcor {
-  background-color: #2e9cca;
+.bcor, .botao-contato:hover {
+  background-color: #2e9cca !important;
 }
 
 .bcor1 {
