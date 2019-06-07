@@ -1,18 +1,97 @@
 /* Add a black background color to the top navigation */
 body {
   font-family: 'Arial', sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.5px;
   color: #777;
   margin: 0;
   padding: 0;
 }
 
-p {
+.pattern-text {
   font-weight: normal;
   color: #888 !important;
   font-size: 0.85em;
   line-height: 1.5em;
 }
+
+/*--------- New Style ----------*/
+main.main div.description-profile {
+  margin-top: 70px;
+  margin-left: auto;
+}
+
+main header {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+
+main header section{
+  color: #262626;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+  padding-top: 12px;
+}
+
+.margins1 {
+  margin: 0px;
+}
+
+
+header div.image-profile {
+  margin-right: 28px;
+  max-width: 80px !important;
+  max-height: 80px !important;
+  margin-right:0 !important;
+  display: inline-block;
+}
+
+main header div span img {
+  object-fit:cover;
+  width:100%;
+  border-radius: 20px;
+}
+
+p {
+  margin:7px 0;
+  color: #777;
+}
+
+div.description-profile header section h1 {
+  font-weight: 100;
+  color: #575757 !important;
+  font-size: 25px;
+}
+
+.center-div {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  div.description-profile header section{
+    display:inline-block;
+    margin: 0 0 0 10px;
+    width: calc(100% - 120px);
+  }
+  header div.image-profile {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.about {
+  margin: 7px 17px;
+  font-size: 12.9px;
+  line-height: 16px;
+}
+
+.about1 {
+  font-size: 15px;
+  margin: 3px 0;
+}
+
+
+/*-----------------------------------*/
 
 .topo {
   margin-top:90px !important;
@@ -85,20 +164,19 @@ p {
   color: #038ff9;
   padding: 0 0 0 20px;
   background-color: #fff;
-  box-shadow: 0px 3px 15px #ddd;
+  border-bottom: 1px solid #eee;
 }
 
 .caixa {
   border-radius:5px;
   border: none;
-  padding: 7px 20px;
-  background-color: #2e9cca;
 }
 
 .header h3 {
-  color: #fff;
+  color: #555;
   font-weight: 600;
   font-family: sans-serif;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 500px) {
