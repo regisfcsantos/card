@@ -14,6 +14,10 @@ body {
   line-height: 1.5em;
 }
 
+.espaço {
+  margin-top: 60px;
+}
+
 /*--------- New Style ----------*/
 main.main div.description-profile {
   margin-top: 70px;
@@ -78,6 +82,7 @@ div.description-profile header section h1 {
     max-width: 100px;
     max-height: 100px;
 }
+}
 
 .about {
   margin: 7px 17px;
@@ -107,22 +112,46 @@ div.description-profile header section h1 {
   display:flex;
   overflow-x: auto;
   padding-top:0;
+  position: inherit;
 }
 
 .mini-card {
-  min-width: 250px;
+  margin:0px;
+}
+
+.mini-card2 {
   margin:0px;
 }
 
 .mini-square {
   margin: 5px 15px 30px;
-  padding: 10px 20px;
   background-color:#fff;
   color:#444;
   border-radius: 3px;
   box-shadow: 0px 3px 12px #ccc;
+  max-height: 520px;
   height: 320px;
   font-size: 16px;
+  width: 270px;
+}
+
+
+.mini-square2 {
+  margin: 5px 15px 30px;
+  background-color:#fff;
+  color:#444;
+  border-radius: 3px;
+  box-shadow: 0px 3px 12px #ccc;
+  max-height: 520px;
+  min-height: 500px;
+  font-size: 16px;
+  width: 270px;
+}
+
+.mini-square-txt {
+  padding: 0 20px 10px;
+  height: 340px;
+  position: relative;
 }
 
 .area-cards::-webkit-scrollbar {
@@ -183,10 +212,6 @@ div.description-profile header section h1 {
 main.main{
   margin: 0;
   padding: 0;
-}
-
-.card .square, .card .main-square{
-
 }
 
 .profile-image {
@@ -256,7 +281,17 @@ main.main{
 .quadro-botao {
   margin: 20px auto 0;
   padding: 0px 0;
+  width: 85%;
   text-align: center;
+  position:absolute;
+  bottom:20px; 
+}
+
+.quadro-botao2 {
+  margin: 20px auto 0;
+  padding: 0px 0;
+  text-align: center;
+  bottom:20px; 
 }
 
 .botao-contato {
@@ -315,6 +350,17 @@ main.main{
   clip: rect(0, 100%, 40px, 0px);
   width: 100% ;
 }
+
+.idea-image {
+  position: relative;
+}
+
+.idea-image img {
+  position: relative;
+  clip: rect(0, 100%, 40px, 0px);
+  width: 100%;
+}
+
 
 body.escrever .box hr {
   margin: 20px 0;
